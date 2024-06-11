@@ -38,5 +38,5 @@ def upload_image():
         imageCapture(image_path)
         return "Success"
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     app.run(debug=True)
