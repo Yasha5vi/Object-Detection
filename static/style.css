@@ -201,10 +201,10 @@ li{
         gap: 20px;
     }
     .optbutton{
-        width: 50%;
+        width: 80%;
     }
     .side{
-        height: 70%;
+        height: auto;
         padding: 5%;
         margin-top: 16%;
         padding-top: 10%;
@@ -248,4 +248,3 @@ li{
         height: 20%;
     }
 }
-
