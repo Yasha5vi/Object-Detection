@@ -1,0 +1,251 @@
+body{
+    margin: 0px;
+    font-family: "Raleway", sans-serif;
+    background-color: #31373f;
+}
+.contain{
+    display: grid;
+    grid-template-rows:1fr 6fr 1fr ;
+    grid-template-columns: 2.25fr 7.75fr;
+    height: 100vh;
+}
+.left{
+    grid-area: 1/1/4/2;
+    background-color: #111827;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item{
+    color: #ffffff;
+    text-align: justify;
+    font-weight: 400;
+    font-style: normal;
+}
+.side{
+    background-color: #31373f;
+    padding:5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    padding-top: 9%;
+}
+.upper{
+    background-color: #1f2937;
+}
+p{
+    font-weight: 200;
+}
+.hd{
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 0px;
+    margin-bottom: 35px;
+    padding-top: 10%;
+}
+h1{
+    font-size: 2em;
+    margin-top: 0px;
+    margin-bottom: 35px;
+}
+.docs{
+    padding: 15px 20px 15px 20px;
+    position: relative;
+    border-radius: 20px;
+    background-color:#4f46e5;
+    font-family: "Raleway",sans-serif;
+    border: 0px;
+    width: 100%;
+    color: white;
+}
+
+.hov:hover{
+    transform :scale(1.05);
+    transition: transform 0.2s;
+}
+
+.txt{
+    font-weight: 500;
+    color: white;
+}
+.vidStr{
+    display: flex;
+    color: #e4e3e3;
+    font-size: 1.05em;
+}
+.tcard{
+    background-color: #111827;
+    padding-top:6%;
+    height: 100%;
+    width: 90%;
+    padding-bottom: 5%;
+    box-shadow: 0px 0px 20px 0px #445363;
+}
+.option{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.optbutton{
+    padding: 15px 20px 15px 20px;
+    position: relative;
+    border-radius: 20px;
+    background-color:#4f46e5;
+    font-family: "Raleway",sans-serif;
+    border: 0px;
+    width: 30%;
+    height: 20%;
+    color: white;
+}
+.rightbutton{
+    background-color:unset;
+    border: 1px solid #4f46e5;
+}
+.gitbtn{
+    height: 90%;
+    width: 20%;
+    padding: 20px 30px 20px 30px;
+    border-radius: 25px;
+    border: 2px solid #4f46e5;
+    background-color: unset;
+    color: white;
+}
+.imgIns{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 15px;
+    padding: 12px;
+    background-color:#4c525f;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    height: 70%;
+}
+.navpt{
+    display: flex;
+    color: white;
+    gap:80px;
+    opacity: 1;
+    margin-bottom: 0px;
+    list-style: none;
+}
+li{
+    padding: 5px;
+    color: white;
+}
+.bton{
+    background-color: unset;
+    border: 0px;
+    color: white;
+}
+.btonv{
+    background-color:#4f46e5;
+    border: 0px;
+    color: white;
+}
+.document{
+    display: none;
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+    .option{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .cardp{
+        padding: 2%;
+    }
+    .navbar{
+        padding: 5px;
+    }
+    .side{
+        height: auto;
+    }
+    .optbutton{
+        width: 50%;
+    }
+    .para{
+        visibility: hidden;
+        margin-bottom: 100px;
+    }
+    .hd{
+        transform:rotate(270deg);
+    }
+    .left{
+        justify-content: center;
+    }
+    .cardp{
+        text-align: justify;
+        padding: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .contain{
+        display: block;
+    }
+    .option{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .optbutton{
+        width: 50%;
+    }
+    .side{
+        height: 70%;
+        padding: 5%;
+        margin-top: 16%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .navbar{
+        position: absolute;
+        top: 0;
+        width: 90%;
+        margin-right: 100px;
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        margin-left: 5%;
+    }
+    .item{
+        display: none;
+    }
+    .cardp{
+        text-align: justify;
+        padding: 20px;
+    }
+    .tcard{
+        width: 100%;
+    }
+    ul{
+        padding:0;
+    }
+    .left{
+        width: 100%;
+    }
+    .document{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .docs{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        height: 20%;
+    }
+}
+
